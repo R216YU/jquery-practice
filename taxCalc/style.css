@@ -17,7 +17,7 @@ body {
 
 /* HEADER */
 header {
-    margin-bottom: 5rem;
+    margin: 1rem 0 5rem 0;
 }
 
 
@@ -28,18 +28,27 @@ header {
 .form-group input {
     padding: .5rem;
     margin-left: 2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 
 
 /* INPUTS */
 .inputs {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 
 /* BUTTON */
 .button {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    background-color: #eb6100;
+    border-radius: 5px;
+}
+.button:hover {
+    background: #f56500;
 }
 
 
