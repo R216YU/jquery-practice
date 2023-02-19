@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>playerForm</title>
+        <!-- JQUERY -->
+        <script src="./jquery.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
+        <link rel="stylesheet" href="./style.css">
+        <!-- JS -->
+        <script src="./scripts.js"></script>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    </head>
+    <body class="container">
+
+        <header class="header">
+            <h1>playerForm</h1>
+        </header>
+
+        <main>
+
+
+            <!-- 入力欄 -->
+            <div class="inputs">
+                <form action="/" name="inputArea" id="inputArea">
+                    <h2>Input Area</h2>
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <p>favoriteAgents(any)</p>
+                        <label for="jett"><input type="checkbox" name="fav" id="jett"> Jett</label>
+                        <label for="sova"><input type="checkbox" name="fav" id="sova"> Sova</label>
+                        <label for="astra"><input type="checkbox" name="fav" id="astra"> Astra</label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>yourRole(only)</p>
+                        <input type="radio" name="role" id="duelist" value="duelist"> Duelist
+                        <input type="radio" name="role" id="initiator" value="initiator"> Initiator
+                        <input type="radio" name="role" id="smoker" value="smoker"> Smoker
+                    </div>
+
+                    <div class="form-group">
+                        <p>favoriteMaps(any)</p>
+                        <select name="maps" id="maps" multiple size="5">
+                            <option value="ascent">Ascent</option>
+                            <option value="bind">Bind</option>
+                            <option value="pearl">Pearl</option>
+                            <option value="breeze">Breeze</option>
+                            <option value="haven">Haven</option>
+                            <option value="icebox">Icebox</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p>自由記入欄</p>
+                        <textarea name="text" id="text" rows="10"></textarea>
+                    </div>
+
+                    <button type="button" id="btnCopy" class="btn">COPY</button>
+                    <button type="submit" id="btnSubmit" class="btn">SUBMIT</button>
+
+                </form>
+
+            </div>
+
+
+            <!-- 出力欄(コピー) -->
+            <div class="outputs">
+                <h2>Copied Area</h2>
+
+                <div class="form-group">
+                    <label for="name2">Name</label>
+                    <input type="text" name="name2" id="name2">
+                </div>
+                <div class="form-group">
+                    <p>yourRole(only)</p>
+                    <input type="radio" name="role2" id="duelist2" value="duelist"> Duelist
+                    <input type="radio" name="role2" id="initiator2" value="initiator"> Initiator
+                    <input type="radio" name="role2" id="smoker2" value="smoker"> Smoker
+                </div>
+                <div class="form-group">
+                    <p>favoriteMaps(any)</p>
+                    <select name="maps2" id="maps2" multiple size="5">
+                        <option value="ascent">Ascent</option>
+                        <option value="bind">Bind</option>
+                        <option value="pearl">Pearl</option>
+                        <option value="breeze">Breeze</option>
+                        <option value="haven">Haven</option>
+                        <option value="icebox">Icebox</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>自由記入欄</p>
+                    <textarea name="text" id="text2" rows="10"></textarea>
+                </div>
+
+            </div>
+
+
+
+        </main>
+        
+    </body>
+</html>
