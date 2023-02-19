@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TaxCalc</title>
+        <!-- JQUERY -->
+        <script src="./jquery.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- JS -->
+        <script src="./scripts.js"></script>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="container">
+        
+        <header>
+            <h1>TaxCalculator</h1>
+        </header>
+
+        <main>
+            <div class="inputs">
+
+                <div class="form-group">
+                    <label for="price">価格</label>
+                    <input type="number" name="price" id="price" value="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="tax">税率</label>
+                    <input type="number" name="tax" id="tax" value="10">
+                </div>
+
+            </div>
+
+            <input type="submit" id="execute" class="button" value="Exec">
+
+            <div class="outputs">
+
+                <div class="form-group">
+                    <label for="">税額</label>
+                    <input type="number" name="taxAmount" id="taxAmount">
+                </div>
+                <div class="form-group">
+                    <label for="">税込</label>
+                    <input type="number" name="taxIncluded" id="taxIncluded">
+                </div>
+
+            </div>
+        </main>
+
+    </body>
+</html>

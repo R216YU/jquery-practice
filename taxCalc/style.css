@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+header {
+    margin-bottom: 5rem;
+}
+
+
+/* 共通 */
+.form-group {
+    padding: .5rem 0;
+}
+.form-group input {
+    padding: .5rem;
+    margin-left: 2rem;
+}
+
+
+/* INPUTS */
+.inputs {
+    margin-bottom: 2rem;
+}
+
+
+/* BUTTON */
+.button {
+    margin-bottom: 2rem;
+}
+
+
+/* OUTPUTS */
+.outputs {
+    margin-bottom: 2rem;
+}
