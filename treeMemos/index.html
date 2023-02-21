@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TreeMemos</title>
+        <!-- JQUERY -->
+        <script src="./jquery.min.js"></script>
+        <!-- CSS -->
+        <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/> -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- JS -->
+        <script src="./scripts.js"></script>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="container">
+
+        <header id="header">
+            <h1>Tree Memos</h1>
+        </header>
+
+
+        <main>
+
+            <!-- ユーザー入力フォーム -->
+            <section class="form">
+                <input type="text" id="line" placeholder="text">
+                <button type="button" class="btn" id="btnAppend">追加</button>
+                <button type="button" class="btn" id="btnNest">入れ子</button>
+            </section>
+
+            <!-- 表示用リスト -->
+            <section class="list">
+                <ul>
+                    <li class="group-1">
+                        <label>
+                            <input type="radio" name="sel" checked /><span>ルート</span>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- コピー用テンプレート li~li -->
+            <section id="template" style="display: none;">
+                <li>
+                    <label>
+                        <input type="radio" name="sel"><span>%s</span>
+                    </label>
+                </li>
+            </section>
+
+
+        </main>
+
+        <footer id="footer">
+            <p><small>&copy;2023 R216YU</small></p>
+        </footer>
+        
+    </body>
+</html>

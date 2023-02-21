@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+#header {
+    margin: 2rem 0 5rem 0;
+}
+
+
+/* FOOTER */
+#footer {
+    text-align: right;
+    margin-top: 5rem 0 2rem 0;
+}
+
+/* SECTION */
+section {
+    margin: 5rem 0;
+}
+
+
+/* FORM */
+.form input {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+.btn {
+    border: 1px solid pink;
+    border-radius: 3px;
+    background-color: pink;
+    padding: 1rem;
+    margin-right: 1rem;
+    color: black;
+}
+.btn:hover {
+    color: #fff;
+}
