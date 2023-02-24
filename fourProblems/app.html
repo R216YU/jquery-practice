@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fourProblems</title>
+        <!-- JQuery -->
+        <script src="./jquery.min.js"></script>
+        <!-- JavaScript -->
+        <script src="./app.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./app.css">
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="container mx-auto bg-body px-10">
+        
+        <header class="my-10">
+            <h1 class="text-4xl">fourProblems</h1>
+        </header>
+
+        <div>
+
+            <div id="problem1" class="border border-gray-500 rounded mb-5">
+                <div class="border-b border-gray-500">
+                    <h2 class="font-bold p-3">問題1. 地球で一番高い山は?</h2>
+                </div>
+                <div class="flex flex-col p-3">
+                    <label><input type="radio" name="p1" value="1"> 立山連峰</label>
+                    <label><input type="radio" name="p1" value="2"> 富士山</label>
+                    <label><input type="radio" name="p1" value="3"> エベレスト</label>
+                </div>
+            </div>
+
+            <div id="problem2" class="border border-gray-500 rounded mb-5">
+                <div class="border-b border-gray-500">
+                    <h2 class="font-bold p-3">問題2. 太陽系で一番重い惑星は?</h2>
+                </div>
+                <div class="flex flex-col p-3">
+                    <label><input type="radio" name="p2" value="1"> 地球</label>
+                    <label><input type="radio" name="p2" value="2"> 木星</label>
+                    <label><input type="radio" name="p2" value="3"> 火星</label>
+                </div>
+            </div>
+
+            <div id="problem3" class="border border-gray-500 rounded mb-5">
+                <div class="border-b border-gray-500">
+                    <h2 class="font-bold p-3">問題3. 日本で一番広い都道府県は?</h2>
+                </div>
+                <div class="flex flex-col p-3">
+                    <label><input type="radio" name="p3" value="1"> 東京</label>
+                    <label><input type="radio" name="p3" value="2"> 新潟</label>
+                    <label><input type="radio" name="p3" value="3"> 北海道</label>
+                </div>
+            </div>
+
+            <div id="problem4" class="border border-gray-500 rounded mb-5">
+                 <div class="border-b border-gray-500">
+                    <h2 class="font-bold p-3">問題3. 松屋のメニューにあるものは?</h2>
+                </div>
+                <div class="flex flex-col p-3">
+                    <label><input type="radio" name="p4" value="1"> ハンバーグカレー</label>
+                    <label><input type="radio" name="p4" value="2"> 担々麺</label>
+                    <label><input type="radio" name="p4" value="3"> チョコレートケーキ</label>
+                </div>
+            </div>
+
+            <div class="flex justify-center mb-5">
+                <button id="btn" class="border border-blue-400 rounded bg-blue-500 text-white py-3 px-5">結果を見る</button>
+            </div>
+
+            <div id="answerPanel" class="border border-gray-500 rounded mb-5 p-10">
+                <p id="answerText" class="text-6xl text-center">?</p>
+            </div>
+
+        </div>
+
+    </body>
+</html>
