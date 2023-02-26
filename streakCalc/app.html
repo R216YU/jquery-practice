@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>streakCalc</title>
+        <!-- JS -->
+        <script src="./jquery.min.js"></script>
+        <script src="./app.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./app.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+    <body class="container mx-auto bg-body">
+
+        <header class="py-10">
+            <h1 class="text-5xl">streakCalc</h1>
+        </header>
+
+        <div class="mb-10">
+            <p>式を入力</p>
+            <textarea id="input" class="w-1/2 p-2.5 border border-gray-600 rounded text-sm" placeholder="1+2" rows="10"></textarea>
+        </div>
+
+        <div class="mb-10">
+            <button id="calcBtn" class="bg-blue-500 py-3 px-5 text-white rounded">計算</button>
+        </div>
+
+        <div class="mb-20">
+            <p>計算結果</p>
+            <textarea id="output" class="w-1/2 p-2.5 border border-gray-600 rounded text-sm" rows="10"></textarea>
+        </div>
+
+
+    <footer class="mb-10">
+        <p class="text-right"><small>&copy;2023 R216YU practice</small></p>
+    </footer>
+        
+    </body>
+</html>
