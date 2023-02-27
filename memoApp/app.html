@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- JS -->
+        <script src="./jquery.min.js"></script>
+        <script src="./app.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./app.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- js-cookie -->
+        <script src="./js.cookie.js"></script>
+    </head>
+    <body class="bg-gray-900 text-white">
+
+        <header class="bg-gray-800">
+          <h1 class="text-xl px-3 py-5">memoApp</h1>
+        </header>
+
+
+        <main class="container mx-auto">
+
+            <section id="template" class="mb-5" hidden>
+                <div id="memoBody" class="w-full bg-transparent border border-white rounded mb-10">
+                    <h2 id="memoBodyTitle" class="text-xl p-3 border-b border-white">[タイトル]</h2>
+                    <p id="memoBodyContent" class="p-3">[メモの内容]</p>
+                </div>
+            </section>
+
+
+            <section id="input" class="w-full my-10">
+                <div class="w-full border border-white rounded mb-5">
+                    <textarea id="inputTitle" class="block w-full bg-transparent border-b border-white p-3" rows="1" placeholder="メモのタイトル"></textarea>
+                    <textarea id="inputContent" class="block w-full bg-transparent p-3" rows="3" placeholder="メモの内容"></textarea>
+                </div>
+                <button id="addBtn" class="bg-sky-500 text-white rounded px-4 py-2">追加</button>
+            </section>
+
+
+            <section id="memoList" class="mb-10">
+            </section>
+            <button id="resetBtn" class="bg-sky-500 text-white rounded px-4 py-2">リセット</button>
+
+        </main>
+
+
+        <footer class="container mx-auto border-t border-gray-800 my-10">
+            <p class="text-center mt-3"><small>&copy;2023 R216YU PRACTICE</small></p>
+        </footer>
+        
+    </body>
+</html>
