@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>autoLinker</title>
+        <!-- JS -->
+        <script src="./jquery.min.js"></script>
+        <script src="./App.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./App.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/ad51989dca.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="text-white bg-slate-800">
+        <a href=""></a>
+
+        <header class="py-3 px-5 bg-slate-900">
+            <h1 class="text-3xl">Auto Linker</h1>
+        </header>
+
+        <main class="container mx-auto m-10">
+
+            <div id="input" class="my-12">
+                <h2 class="text-xl">入力</h2>
+                <textarea rows="5" class="my-3 w-full border rounded bg-transparent input"></textarea>
+                <button id="btn" class="bg-green-600 text-white w-full py-3 rounded-xl hover:bg-green-700 duration-300">
+                    <i class="fa-solid fa-arrow-down mr-3 text-xl"></i>HTMLを作成
+                </button>
+            </div>
+
+            <div id="output" class="my-12">
+                <h2 class="text-xl">出力</h2>
+                <textarea rows="5" class="my-3 w-full border rounded bg-transparent output"></textarea>
+            </div>
+
+            <div id="preview" class="my-12">
+                <h2 class="text-xl">プレビュー</h2>
+                <div class="text-center my-3 py-10 w-full border rounded preview">
+                    
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="p-10">
+            <p class="text-right"><small>&copy;2023 R216YU</small></p>
+        </footer>
+        
+    </body>
+</html>
